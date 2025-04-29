@@ -39,7 +39,6 @@ const ShapeDialog = ({ open, onClose, onSelectShape }) => {
   return (
     <Dialog open={open} onClose={onClose} fullWidth maxWidth="md">
       <Box display="flex" height="500px">
-        {/* Sidebar */}
         <Box width="200px" bgcolor="#f5f5f5" p={1} overflow="auto">
           <TextField
             size="small"
@@ -57,10 +56,8 @@ const ShapeDialog = ({ open, onClose, onSelectShape }) => {
           </List>
         </Box>
 
-        {/* Main Content */}
         <Box flex={1} bgcolor="white" p={2} overflow="auto">
           <Grid container spacing={2}>
-            {/* {shapes.map((shape, index) => ( */}
             <Grid item xs={3}>
               <Button
                 sx={{
@@ -76,7 +73,6 @@ const ShapeDialog = ({ open, onClose, onSelectShape }) => {
               sx={{
                   margin: "4px",
                   cursor: "pointer",
-                //   bgcolor:'blue'
                 }}
                 variant="text"
                 onClick={() => onSelectShape("circle")}

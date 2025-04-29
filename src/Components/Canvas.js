@@ -1,9 +1,7 @@
 
 import React, { useRef, useState } from 'react';
 import { Stage, Layer } from 'react-konva';
-// import { Button } from '@mui/material';
 import Navbar from './NavBar';
-import ShapePickerDialog from "./ShapePicker";
 import ShapeRenderer from "./ShapeRender";
 import ShapeDialog from './Dialog';
 
@@ -38,10 +36,6 @@ const Canvas = () => {
     <div className="p-4">
 
 <Navbar onAddShapeClick={() => setDialogOpen(true)} />
-
-      {/* <div className="flex justify-center gap-4 mb-4">
-        <Button onClick={() => setDialogOpen(true)}></Button>
-      </div> */}
 
       <ShapeDialog
         open={dialogOpen}

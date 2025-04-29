@@ -18,8 +18,7 @@ const Navbar = ({ onAddShapeClick }) => {
         display: 'flex',
         justifyContent: 'center', 
         alignItems: 'flex-start',  
-        // height: '100vh',
-        // paddingTop: '20px', 
+        
       }} >
        
           <BorderlessButton variant="text">📋 </BorderlessButton>
